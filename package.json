@@ -1,0 +1,19 @@
+{
+  "name": "heroku-flix",
+  "description": "hack",
+  "version": "0.0.1",
+  "author": "me",
+  "dependencies": {
+    "express": "~3.1.0",
+    "torrent-stream": "*"
+
+  },
+  "devDependencies": {
+  },
+  "engine": {
+    "node": "0.10.x"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "private": true
+}
