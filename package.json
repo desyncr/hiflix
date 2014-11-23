@@ -1,10 +1,11 @@
 {
   "name": "heroku-flix",
-  "description": "hack",
+  "description": "Proof of concept - do not use",
   "version": "0.0.1",
-  "author": "me",
+  "author": "Dario Cavuotti",
   "dependencies": {
-    "express": "~3.1.0",
+    "bower": "*",
+    "express.io": "*",
     "torrent-stream": "*"
 
   },
@@ -13,7 +14,10 @@
   "engine": {
     "node": "0.10.x"
   },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "bower install"
+  },
   "license": "MIT",
-  "main": "index.js",
   "private": true
 }

@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -300px;
+    height: 200px;
+    width: 600px;
+    background: rgba(243, 243, 243, 0.8);
+    border: 1px solid rgba(128,128,128,0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 30px 5px rgb(185, 185, 185);
+}
+
+#content form div {
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 80%;
+}
+
+#content img {
+    display: none;
+    margin: 0 auto;
+}
+
+#content .social {
+    text-align: right;
+}
+
+#movie {
+    display: none;
+}
+
+input#info {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 98%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid rgba(128,128,128,0.4);
+    text-align: center;
+    width: 400px;
+    margin: 5px 0;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    left: 45% !important;
+    top: 40% !important;
+}

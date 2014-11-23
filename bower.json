@@ -1,0 +1,23 @@
+{
+  "name": "heroku-flix",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "DC* <dc@syncr.com.ar>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "videojs": "~4.10.2"
+  },
+  "directory": "components/",
+  "analytics": false
+}
