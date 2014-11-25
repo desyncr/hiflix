@@ -26,7 +26,7 @@ Or manually as follow:
     git clone git@github.com:desyncr/hiflix.git
     cd hiflix
     npm install
-    ower install
+    bower install
     npm start
     
 ## Stack
