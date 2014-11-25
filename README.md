@@ -21,12 +21,23 @@ You can use our one-click heroku deploy:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+Or manually as follow:
+
+``
+git clone git@github.com:desyncr/hiflix.git
+cd hiflix
+npm install
+bower install
+npm start
+``
+
 ## Stack
 
-- Node.js - nodejs.org
-- Express.io - express-io.org
-- video.js - www.videojs.com
-- bower - bower.io
+- [Node.js][3]
+- [Express.io][4]
+- [Torrent-stream][5]
+- [video.js][6]
+- [bower][7]
 
 ## Feedback
 
@@ -36,6 +47,11 @@ If you'd like to contribute to the project or file a bug or feature request, ple
 
 The project is licensed under the [GNU GPL v3][2]
 
-  [1]: https://github.com/desyncr/wtngrm/
+  [1]: https://github.com/desyncr/hiflix
   [2]: http://www.gnu.org/licenses/gpl.html
+  [3]: https://nodejs.org
+  [4]: http://express-io.org
+  [5]: https://github.com/mafintosh/torrent-stream
+  [6]: http://www.videojs.com
+  [7]: https://bower.io
 
