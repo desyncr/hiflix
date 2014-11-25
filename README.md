@@ -23,14 +23,12 @@ You can use our one-click heroku deploy:
 
 Or manually as follow:
 
-``
-git clone git@github.com:desyncr/hiflix.git
-cd hiflix
-npm install
-bower install
-npm start
-``
-
+    git clone git@github.com:desyncr/hiflix.git
+    cd hiflix
+    npm install
+    ower install
+    npm start
+    
 ## Stack
 
 - [Node.js][3]
