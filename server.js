@@ -2,7 +2,7 @@ var app = require('express.io')(),
     ts = require('torrent-stream');
 
 var options = {
-    path: __dirname,
+    path: __dirname + '/stream/',
 };
 var minDownloadSize = 50 * 1024 * 1024;
 
@@ -20,11 +20,20 @@ app.io.route('stream', function(req) {
         console.log('engine.onReady');
         engine.files.forEach(function(file) {
             if (file.name.match(/.*\.(mkv|mp4)/) && file.length > minDownloadSize) {
-                console.log('emit.play: ' + file.name);
+                console.log('download: ' + file.path);
                 var stream = file.createReadStream();
-                req.io.emit('play', { src: '/stream/' + file.name })
             } else {
-                console.log('ignoring: ' + file.name);
+                console.log('ignoring: ' + file.path);
+            }
+        })
+    })
+
+    engine.on('download', function() {
+        console.log('engine.onDownload');
+        engine.files.forEach(function(file) {
+            if (file.name.match(/.*\.(mkv|mp4)/) && file.length > minDownloadSize) {
+                console.log('emit.play: ' + file.path);
+                req.io.emit('play', { src: '/stream/' + file.path})
             }
         })
     })
@@ -34,7 +43,7 @@ app.io.route('stream', function(req) {
 // but here we name it :file
 app.get('/stream/:file(*)', function(req, res, next){
   var file = req.params.file
-    , path = options.path + '/' + file;
+    , path = options.path + '/' + file.replace('..', '');
 
   res.sendfile(path);
 })
