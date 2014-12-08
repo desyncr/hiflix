@@ -1,7 +1,7 @@
 {
   "name": "hiFlix",
-  "description": "iflix clone, built using Express.io & video.js",
-  "keywords": ["express", "socket.io", "video.js"],
+  "description": "iflix clone, built using Express.io, torrent-stream & video.js",
+  "keywords": ["express", "socket.io", "video.js", "torrent-stream"],
   "website": "https://github.com/desyncr/hiflix",
   "repository": "https://github.com/desyncr/hiflix",
   "env": {
