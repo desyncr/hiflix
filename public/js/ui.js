@@ -16,6 +16,7 @@ var ui = {
         return true;
     },
     showPlayer: function(video) {
+        $('body').addClass('theater');
         $('#content').hide('slow');
         $('#movie').show('slow');
 
@@ -34,6 +35,7 @@ var ui = {
         document.title = documentTitle;
         $('#movie').hide();
         $('#content').show();
+        $('body').removeClass('theater');
     },
     loading: function() {
         $('#content img').css({display: 'block'});

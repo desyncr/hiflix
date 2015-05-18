@@ -1,5 +1,6 @@
 body {
     font-family: Verdana,Arial,sans-serif;
+    transition: all 3s ease;
 }
 
 a {
@@ -60,4 +61,8 @@ input#info {
 .vjs-default-skin .vjs-big-play-button {
     left: 45% !important;
     top: 40% !important;
+}
+
+.theater {
+    background-color: #000;
 }
